@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winning Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Winning Calculator</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="types-of-betting.html">Types of Betting</a></li>
+        <li><a href="betting-tips.html">Betting Tips</a></li>
+        <li><a href="risks-and-regulations.html">Risks & Regulations</a></li>
+        <li><a href="analytics.html">Analytics</a></li>
+        <li><a href="winning-calculator.html" class="active">Winning Calculator</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <form id="calc-form">
+        <label for="amount">Bet Amount:</label>
+        <input type="number" id="amount" required><br>
+        <label for="odds">Odds:</label>
+        <input type="number" id="odds" required><br>
+        <button type="button" onclick="calculateWinnings()">Calculate</button>
+        <p id="result"></p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Betting Website. All rights reserved.</p>
+  </footer>
+  <script>
+    function calculateWinnings() {
+      const amount = parseFloat(document.getElementById('amount').value);
+      const odds = parseFloat(document.getElementById('odds').value);
+      const winnings = amount * odds;
+      document.getElementById('result').innerText = `Your winnings: $${winnings.toFixed(2)}`;
+    }
+  </script>
+</body>
+</html>

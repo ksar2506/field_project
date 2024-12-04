@@ -1,0 +1,110 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+/* Navigation Bar Styling */
+nav {
+    background: linear-gradient(90deg, #00ff00, #fdd835); /* Neon gradient */
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    margin: 0 20px;
+    font-size: 18px;
+    color: #121212; /* Dark text for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+nav a:hover {
+    transform: scale(1.2); /* Zoom effect */
+    color: #ffffff; /* Highlight */
+}
+
+/* Section Styling */
+h1, h2 {
+    text-align: center;
+    color: #00ff00; /* Neon green headings */
+    margin-bottom: 20px;
+}
+
+section {
+    background: #1c1c1c; /* Dark card background */
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Button Styling */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 18px;
+    background: linear-gradient(90deg, #00ff00, #fdd835); /* Neon gradient */
+    color: #121212; /* Dark button text */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #fdd835, #00ff00); /* Reverse gradient */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    color: #121212;
+    background-color: #00ff00; /* Neon footer */
+}
+
+/* Additional Styling for Lists */
+ul {
+    padding-left: 25px;
+    list-style-type: disc;
+    color: #cccccc; /* Light gray for lists */
+}
+
+/* Table Styling (If Used in Analytics) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #333333;
+}
+
+th {
+    background: #00ff00;
+    color: #121212;
+}
+
+td {
+    background: #1c1c1c;
+    color: #ffffff;
+}

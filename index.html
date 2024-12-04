@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the World of Betting</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="types-of-betting.html">Types of Betting</a>
+            <a href="betting-tips.html">Betting Tips</a>
+            <a href="risks-and-regulations.html">Risks & Regulations</a> <!-- Ensure this is correct -->
+            <a href="analytics.html">Analytics</a>
+            <a href="winning-calculator.html">Winning Calculator</a>
+        </nav>
+        
+    </header>
+    
+
+    <main>
+        <section id="about">
+            <h2>About Betting</h2>
+            <button class="toggle-btn">Show/Hide About Betting</button>
+            <div class="content">
+                <p>Betting involves predicting outcomes and wagering money or other stakes on those predictions. It has a long history and is prevalent in various forms, such as sports betting, casinos, and online platforms.</p>
+            </div>
+        </section>
+
+        <section id="types">
+            <h2>Types of Betting</h2>
+            <button class="toggle-btn">Show/Hide Types of Betting</button>
+            <div class="content">
+                <ul>
+                    <li>Sports Betting</li>
+                    <li>Casino Games</li>
+                    <li>Online Betting Platforms</li>
+                    <li>Lottery and Raffles</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="risks">
+            <h2>Risks & Regulations</h2>
+            <p>It's essential to gamble responsibly and be aware of the legal framework in your country. Understanding the risks involved in betting can help prevent potential financial or emotional harm.</p>
+        </section>
+
+        <section id="analytics">
+            <h2>Analytics</h2>
+            <p>Visualize the betting data trends over time:</p>
+            <canvas id="bettingchart"></canvas> <!-- Canvas for Chart -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email us at: <a href="mailto:support@bettingworld.com">support@bettingworld.com</a></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
